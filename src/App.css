@@ -1,38 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* APP */
+
 .App {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  /* background-color: #b7cbff; */
+  background-color: #6554af;
+}
+
+.App h1 {
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+/* Parent */
+
+.parent-component {
+  /* background-color: rgba(255, 157, 157, 0.9); */
+  background-color: #e966a0;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select-all-container {
+  text-align: right;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.small-components-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.small-component {
+  background-color: rgba(240, 240, 240, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  width: 45%;
+  max-width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small-component h3 {
+  margin-top: 0;
+}
+
+.small-component button {
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: bolder;
+  padding: 5px 20px;
+  color: #ffffff;
+  background-color: #6554af;
+}
+
+.total-price-container {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* .total-price-container {
+  color: #6554af;
+} */
+
+/* Checkbox */
+.checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #333;
+}
+
+.checkbox-label .checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-label .checkbox-custom::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label .checkbox-input:checked ~ .checkbox-custom::after {
+  display: block;
+}
+
+.checkbox-label .checkbox-custom::after {
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
