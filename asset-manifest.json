@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TimesPrime/static/css/main.bd9be35f.css",
+    "main.js": "/TimesPrime/static/js/main.4c3ac28b.js",
+    "index.html": "/TimesPrime/index.html",
+    "main.bd9be35f.css.map": "/TimesPrime/static/css/main.bd9be35f.css.map",
+    "main.4c3ac28b.js.map": "/TimesPrime/static/js/main.4c3ac28b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd9be35f.css",
+    "static/js/main.4c3ac28b.js"
+  ]
+}
